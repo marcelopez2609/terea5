@@ -1,0 +1,13 @@
+void setup() {
+  size(1000, 770, OPENGL );
+}
+
+void draw() {
+  background(0);
+  camera(320, height/2, mouseX, mouseY, width/2, 0, 0, 1, 0  );
+   // camera(320, height/2, mouseX, width/2, , 0, 0, 1, 0  );
+  translate(width/2, height/2, -100   );
+  stroke(250);
+  noFill();
+  sphere(300);
+}
